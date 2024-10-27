@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+      <img src="img/logo-escuela.png">
+      <h1> Sistema de digitacion de notas </h1>  
+    </header>
+    <main class="contenido">
+        <div class="Frontend1">
+            <h2>Frontend 1</h2> 
+            <input type="number" id="notaFrontend1" min="1" max="5" step="0.2" placeholder="Nota 1" required>
+            <input type="number" id="notaFrontend2" min="1" max="5" step="0.2" placeholder="Nota 2" required>
+             <input type="number" id="notaFrontend3" min="1" max="5" step="0.2" placeholder="Nota 3" required>
+             <br>
+             <button type="button" onclick="calcularPromedio('Frontend')">Evaluar</button>    
+            <p id="resultadoFrontend"></p>
+
+        </div>
+        
+        <div class="Backend1">
+            <h2>Backend 1</h2> 
+            <input type="number" id="notaBackend1" min="1" max="5" step="0.2" placeholder="Nota 1" required>
+            <input type="number" id="notaBackend2" min="1" max="5" step="0.2" placeholder="Nota 2" required>
+             <input type="number" id="notaBackend3" min="1" max="5" step="0.2" placeholder="Nota 3" required>
+             <br>
+            <button type="button" onclick="calcularPromedio('Backend')">Evaluar</button> 
+            <p id="resultadoBackend"></p>
+        </div>
+
+        <div class="Metodologiasagiles ">
+            <h2>Metodologias <br> agiles</h2> 
+        <input type="number" id="notaMetodologias1" min="1" max="5" step="0.2" placeholder="Nota 1" required>
+        <input type="number" id="notaMetodologias2" min="1" max="5" step="0.2" placeholder="Nota 2" required>
+        <input type="number" id="notaMetodologias3" min="1" max="5" step="0.2" placeholder="Nota 3" required>
+        <br>
+        <button type="button" onclick="calcularPromedio('Metodologias')">Evaluar</button>    
+        <p id="resultadoMetodologias"></p>
+    </div>
+    
+</main>
+<footer></footer>
+
+    <script src="main.js"></script>
+    
+    
+</body>
+</html>
